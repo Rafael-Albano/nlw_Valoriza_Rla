@@ -2,7 +2,9 @@ import { createConnection, Connection } from 'typeorm';
 
 class TypeORMConnection {
     async connection() {
-        return await createConnection();
+        return await (await createConnection())
+            .createQueryBuilder()
+            .softDelete();
     }
 }
 

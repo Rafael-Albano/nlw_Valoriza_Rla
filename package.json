@@ -18,14 +18,17 @@
     },
     "dependencies": {
         "express": "^4.17.1",
+        "express-async-errors": "^3.1.1",
         "reflect-metadata": "^0.1.13",
         "sqlite3": "^5.0.2",
-        "typeorm": "^0.2.34"
+        "typeorm": "^0.2.34",
+        "uuid": "^8.3.2"
     },
     "devDependencies": {
         "@commitlint/cli": "^12.1.4",
         "@commitlint/config-conventional": "^12.1.4",
         "@types/express": "^4.17.12",
+        "@types/uuid": "^8.3.0",
         "@typescript-eslint/eslint-plugin": "^4.28.0",
         "commitizen": "^4.2.4",
         "cz-conventional-changelog": "3.3.0",

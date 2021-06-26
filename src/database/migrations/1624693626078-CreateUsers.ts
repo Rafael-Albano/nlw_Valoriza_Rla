@@ -34,6 +34,11 @@ export class user1624693626078 implements MigrationInterface {
                         type: 'timestamp',
                         default: 'now()',
                     },
+                    {
+                        name: 'deleted_at',
+                        type: 'timestamp',
+                        isNullable: true,
+                    },
                 ],
             }),
         );
